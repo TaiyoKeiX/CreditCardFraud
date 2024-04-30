@@ -24,3 +24,5 @@ This project was developed using a specialized Docker container. The following s
 4. Modify and run the following command: "docker run -v //c/Users/.../FinalEnv:/home/notebooks -p 8888:8888 --name pynb_finalcontainer pynb_finalproj:0.0.1" Replace the ... with the rest of your file path.
 5. At this point, the container will be running. Copy one of the links in the terminal and paste it into your browser of choice to open up the notebook.
 6. Once the notebook is opened, restart the kernel and run all cells.
+
+Alternatively, [here](https://hub.docker.com/r/karamhaddad/pynb_finalproj) is the URL of our image hosted through Dockerhub. The notebook and CSV data still must be acquired through this repo.
