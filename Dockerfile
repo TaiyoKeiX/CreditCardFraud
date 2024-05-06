@@ -10,6 +10,7 @@ RUN apt-get install -y graphviz
 
 RUN pip install --upgrade pip
 RUN pip install jupyter
+RUN pip install nbconvert
 
 # Installing packages 
 
@@ -21,3 +22,4 @@ WORKDIR /home/notebooks/
    
 
 CMD jupyter notebook --no-browser --allow-root --ip 0.0.0.0 #this should work perfectly now!
+CMD jupyter nbconvert notebook.ipynb --to slides --post serve
